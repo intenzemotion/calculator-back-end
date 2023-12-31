@@ -7,6 +7,7 @@ public class CalculatorDTO {
     private double value2;
     private String unit2;
     private String operation;
+    private String outputUnit;
 
     public double getValue1() {
         return value1;
@@ -46,5 +47,13 @@ public class CalculatorDTO {
 
     public void setOperation(String operation) {
         this.operation = operation;
+    }
+
+    public String getOutputUnit() {
+        return outputUnit;
+    }
+
+    public void setOutputUnit(String outputUnit) {
+        this.outputUnit = outputUnit;
     }
 }

@@ -1,5 +1,6 @@
 package com.woodwing.calculator;
 
+import com.woodwing.calculator.enumeration.MeasurementUnitEnum;
 import com.woodwing.calculator.service.CalculatorServiceImpl;
 import org.junit.jupiter.api.Test;
 
@@ -16,8 +17,9 @@ class CalculatorServiceImplTest {
         String unit1 = "meter";
         double value2 = 3.0;
         String unit2 = "yard";
+        String outputUnit = String.valueOf(MeasurementUnitEnum.METER);
 
-        double result = calculatorService.add(value1, unit1, value2, unit2);
+        double result = calculatorService.add(outputUnit, value1, unit1, value2, unit2);
 
         assertEquals(7.74, result, 0.01);
     }
@@ -29,8 +31,9 @@ class CalculatorServiceImplTest {
         String unit1 = "meter";
         double value2 = 2.0;
         String unit2 = "yard";
+        String outputUnit = String.valueOf(MeasurementUnitEnum.METER);
 
-        double result = calculatorService.subtract(value1, unit1, value2, unit2);
+        double result = calculatorService.subtract(outputUnit, value1, unit1, value2, unit2);
 
         assertEquals(6.17, result, 0.01);
     }
@@ -42,8 +45,9 @@ class CalculatorServiceImplTest {
         String unit1 = "meter";
         double value2 = 2.5;
         String unit2 = "yard";
+        String outputUnit = String.valueOf(MeasurementUnitEnum.METER);
 
-        double result = calculatorService.multiply(value1, unit1, value2, unit2);
+        double result = calculatorService.multiply(outputUnit, value1, unit1, value2, unit2);
 
         assertEquals(9.16, result, 0.01);
     }
@@ -55,8 +59,9 @@ class CalculatorServiceImplTest {
         String unit1 = "meter";
         double value2 = 3.0;
         String unit2 = "yard";
+        String outputUnit = String.valueOf(MeasurementUnitEnum.METER);
 
-        double result = calculatorService.divide(value1, unit1, value2, unit2);
+        double result = calculatorService.divide(outputUnit, value1, unit1, value2, unit2);
 
         assertEquals(3.28, result, 0.01);
     }
