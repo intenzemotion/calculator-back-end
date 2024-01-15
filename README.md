@@ -1,6 +1,6 @@
 # Calculator of Unit Measurement
 
-This is a simple calculator app that can perform addition, subtraction, multiplication, and division of values in meters and yards. For now, it will only output in meters.
+This is a simple calculator app that can perform addition, subtraction, multiplication, and division of values in meters and yards. For now, it will only output in meters and yards.
 
 ## Project Structure
 
